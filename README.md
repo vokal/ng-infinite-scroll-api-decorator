@@ -42,7 +42,7 @@ Angular service that at a minimum has a `$get` method that take a url parameter 
 
 * * *
 
-#### `scope.items
+#### `scope.items`
 
 *Array* | Default: []
 
