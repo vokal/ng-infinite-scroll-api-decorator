@@ -1,0 +1,19 @@
+{
+  "name": "ng-infinite-scroll-api-decorator",
+  "homepage": "https://github.com/vokal/ng-infinite-scroll-api-decorator",
+  "authors": [
+    {
+      "name": "Vokal",
+      "email": "webdevelopers@vokal.io"
+    }
+  ],
+  "description": "Makes it easier to connect paged API responses to ngInfiniteScroll",
+  "license": "MIT",
+  "ignore": [
+    "grunt/",
+    "spec/"
+  ],
+  "dependencies": {
+    "toastr": "~2.1.1"
+  }
+}
