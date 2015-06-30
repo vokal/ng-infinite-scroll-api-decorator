@@ -10,8 +10,8 @@ Makes it easier to connect paged API responses to ngInfiniteScroll
 $scope.list = new infiniteScroll( urlString, apiService );
 ```
 
-- `urlString` - url to the paged route with the token `{page}` which will be replaced with a number as each page is loaded. For example: `/users?p={page}`.
-- `apiService` - Angular service that at a minimum has a `$get` method that take a url parameter and returns a promise where the resolved value includes a `data` object with a `results` array. This is intended to be [vokal-ng-api](https://github.com/vokal/vokal-ng-api) but any compatible interface should work.
+- `urlString` - See url Property below
+- `apiService` - See API Property below
 
 ```html
 <tbody infinite-scroll="list.getNextPage()" infinite-scroll-distance="0"
@@ -30,7 +30,7 @@ The attributes shown are attributes of ngInfiniteScroll, but the values `list.bu
 
 *String* | Default: set by argument during initialization
 
-The paging url
+url to the paged route with the token `{page}` which will be replaced with a number as each page is loaded. For example: `/users?p={page}`.
 
 * * *
 
@@ -38,7 +38,7 @@ The paging url
 
 *Service* | Default: set by argument during initialization
 
-The API service
+Angular service that at a minimum has a `$get` method that take a url parameter and returns a promise where the resolved value includes a `data` object with a `results` array. This is intended to be [vokal-ng-api](https://github.com/vokal/vokal-ng-api) but any compatible interface should work.
 
 * * *
 
