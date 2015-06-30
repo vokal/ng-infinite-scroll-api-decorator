@@ -24,39 +24,67 @@ $scope.list = new infiniteScroll( urlString, apiService );
 
 The attributes shown are attributes of ngInfiniteScroll, but the values `list.busy`, `list.hasMore`, `list.getNextPage()`, and `list.items` are derived from infiniteScrollDecorator.
 
-### API
+### Properties
+
+#### `url`
+
+*String* | Default: set by argument during initialization
+
+The paging url
+
+* * *
+
+#### `API`
+
+*Service* | Default: set by argument during initialization
+
+The API service
+
+* * *
+
+#### `scope.items
+
+*Array* | Default: []
+
+Currently loaded results
+
+* * *
+
+#### `page`
+
+*Number* | Default: 1
+
+Current page index
+
+* * *
+
+#### `busy`
+
+*Boolean* | Default: false
+
+Whether there is currently a pending XHR
+
+* * *
+
+#### `hasMore`
+
+*Boolean* | Default: true
+
+Whether there are more results available. This will be changed to `false` when no more results can be loaded.
+
+
+### Methods
 
 #### `reload()`
 
 Reinitialize paging. Empties item list and resets to first page.
 
+* * *
+
 #### `getNextPage()`
 
 Loads the next page and appends items on callback.
 
-#### `url` String
-
-The paging url
-
-#### `API` Service
-
-The API service
-
-#### `scope.items` Array
-
-Currently loaded results
-
-#### `page` Number
-
-Current page index, start at 1
-
-#### `busy` Boolean
-
-Whether there is currently a pending XHR
-
-#### `hasMore` Boolean
-
-Whether there are more results available. This will default to `true` and change to `false` when no more results can be loaded.
 
 
 ## Prerequisites
