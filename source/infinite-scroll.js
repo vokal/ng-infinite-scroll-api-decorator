@@ -7,7 +7,7 @@
             return factory( a0 );
         } );
     }
-    else if ( typeof exports === "object" )
+    else if( typeof exports === "object" )
     {
         module.exports = factory( require( "toastr" ) );
     }
@@ -26,7 +26,7 @@
         	/*
             * @param {string} url example: /users?p={page}
         	*/
-            var infiniteScrollDecorator = function( url, API )
+            var infiniteScrollDecorator = function ( url, API )
             {
                 var scope = this;
 
