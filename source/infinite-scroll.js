@@ -2,20 +2,20 @@
 {
     if( typeof define === "function" && define.amd )
     {
-        define( "infinite-scroll-decorator", [], function ( a0 )
+        define( "infinite-scroll-decorator", [ "toastr" ], function ( a0 )
         {
             return factory( a0 );
         } );
     }
     else if ( typeof exports === "object" )
     {
-        module.exports = factory();
+        module.exports = factory( require( "toastr" ) );
     }
     else
     {
-        factory();
+        factory( toastr );
     }
-}( this, function ()
+}( this, function ( toastr )
 {
     angular.module( "infiniteScrollDecorator", [] )
     .service( "infiniteScrollDecorator", [
