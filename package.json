@@ -1,6 +1,6 @@
 {
   "name": "ng-infinite-scroll-api-decorator",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Makes it easier to connect paged API responses to ngInfiniteScroll",
   "main": "source/infinite-scroll",
   "scripts": {
