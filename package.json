@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/vokal/ng-infinite-scroll-api-decorator/issues"
   },
-  "homepage": "https://github.com/vokal/ng-infinite-scroll-api-decorator#readme"
+  "homepage": "https://github.com/vokal/ng-infinite-scroll-api-decorator#readme",
+  "dependencies": {
+    "toastr": "~2.1.2"
+  }
 }
