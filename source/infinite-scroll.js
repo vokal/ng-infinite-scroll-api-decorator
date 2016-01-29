@@ -1,4 +1,4 @@
-( function ( root, factory )
+( function ( root, factory, toastr )
 {
     if( typeof define === "function" && define.amd )
     {
